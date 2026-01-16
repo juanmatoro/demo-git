@@ -10,6 +10,10 @@
         background-color: #fff;
         border-radius: 5px;
     }
+    header {
+        background-color: #375d64;
+        color: white;
+    }
     .center {
         text-align: center;
     }
