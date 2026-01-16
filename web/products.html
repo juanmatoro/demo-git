@@ -5,44 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - My Web Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="theme-toggle.js"></script>
 </head>
-<body>
-    <header class="center">
-        <h1>Products</h1>
+<body class="light-theme">
+    <header>
+        <div class="header-content center">
+            <h1>Products</h1>
+        </div>
+        <button id="theme-toggle" title="Toggle theme">
+            <span id="theme-icon">🌙</span>
+        </button>
     </header>
     <nav>
            <ul>
             <li><a class="btn-nav" href="index.html">Home</a></li>
             <li><a class="btn-nav" href="about.html">About</a></li>
-            <li><a class="btn-nav" href="products.html">Products</a></li>
+            <li><a class="btn-nav active" href="products.html">Products</a></li>
             <li><a class="btn-nav" href="team.html">Team</a></li>
             <li><a class="btn-nav" href="contact.html">Contact</a></li>
         </ul>
     </nav>
   <main>
-  <section id="products">
+  <section id="hero" class="hero-full">
     <h2>📦 Our Products</h2>
     <p>Explore our carefully curated collection of products designed with you in mind. Each item is crafted to deliver exceptional value and performance.</p>
+  </section>
+
+  <section id="product-lineup" class="product-cards">
+    <div class="product-card">
+      <h3>🚀 Starter Plan</h3>
+      <p class="price">$29/mo</p>
+      <p>Perfect for individuals and small teams getting started.</p>
+      <ul>
+        <li>5 Projects</li>
+        <li>10GB Storage</li>
+        <li>Email Support</li>
+        <li>Basic Analytics</li>
+      </ul>
+      <button class="btn">Get Started</button>
+    </div>
+    <div class="product-card">
+      <h3>💼 Professional Plan</h3>
+      <p class="price">$79/mo</p>
+      <p>Ideal for growing businesses that need more power.</p>
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>100GB Storage</li>
+        <li>Priority Support</li>
+        <li>Advanced Analytics</li>
+      </ul>
+      <button class="btn">Get Started</button>
+    </div>
+    <div class="product-card">
+      <h3>🏢 Enterprise Plan</h3>
+      <p class="price">$199/mo</p>
+      <p>Complete solution for large organizations.</p>
+      <ul>
+        <li>Unlimited Everything</li>
+        <li>1TB Storage</li>
+        <li>24/7 Phone Support</li>
+        <li>Custom Integrations</li>
+      </ul>
+      <button class="btn">Contact Sales</button>
+    </div>
+  </section>
+
+  <section id="features" class="two-column">
+    <h2>✨ Product Features</h2>
     <ul>
       <li>Premium Quality Materials</li>
       <li>Innovative Design</li>
       <li>Sustainable Manufacturing</li>
+      <li>Lifetime Warranty</li>
+      <li>Free Shipping Worldwide</li>
     </ul>
   </section>
-  <section id="services">
+
+  <section id="services" class="two-column">
     <h2>⚙️ Professional Services</h2>
-    <p>Our comprehensive services are tailored to help you achieve your goals efficiently and effectively.</p>
     <ul>
       <li>Consulting & Strategy</li>
       <li>Implementation Support</li>
       <li>24/7 Customer Service</li>
+      <li>Training & Onboarding</li>
+      <li>Custom Development</li>
     </ul>
   </section>
-  <section id="pricing">
-    <h2>💰 Flexible Pricing</h2>
+
+  <section id="testimonial" class="testimonial-section">
+    <h2>💬 Customer Success Story</h2>
+    <blockquote>
+      <p>"Switching to this product was the best decision we made. Our productivity increased by 300%!"</p>
+      <footer>— Michael Chen, Tech Director</footer>
+    </blockquote>
+  </section>
+
+  <section id="cta" class="full-width">
+    <h2>🎯 Ready to Get Started?</h2>
     <p>Choose a plan that works for you. We offer flexible pricing options designed to fit businesses of all sizes.</p>
-    <p>Whether you're just starting out or scaling up, we have the perfect solution for your needs.</p>
-    <button class="btn">View Pricing</button>
+    <button class="btn">Start Free Trial</button>
   </section>
 </main>
     <footer>

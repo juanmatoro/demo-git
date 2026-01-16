@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Web Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="theme-toggle.js"></script>
 </head>
-<body>
-    <header class="center">
-        <h1>Home</h1>
+<body class="light-theme">  
+    <header>
+        <div class="header-content center">
+            <h1>Welcome to My Web Page</h1>
+        </div>
+        <button id="theme-toggle" title="Toggle theme">
+            <span id="theme-icon">🌙</span>
+        </button>
     </header>
     <nav>
         <ul>
-            <li><a class="btn-nav" href="index.html">Home</a></li>
+            <li><a class="btn-nav active" href="index.html">Home</a></li>
             <li><a class="btn-nav" href="about.html">About</a></li>
             <li><a class="btn-nav" href="products.html">Products</a></li>
             <li><a class="btn-nav" href="team.html">Team</a></li>
@@ -20,20 +26,64 @@
         </ul>
     </nav>
     <main>
-        <section id="home">
+        <section id="hero" class="hero-full">
             <h2>🏠 Welcome Home</h2>
-            <p>Welcome to our website! We're dedicated to providing you with the best experience possible. Explore our products, learn about our mission, and connect with our amazing team.</p>
-            <p>Start your journey with us today and discover what makes us unique.</p>
+            <p>Discover amazing experiences and connect with us. We're dedicated to providing you with the best service possible.</p>
+            <button class="btn">Get Started</button>
         </section>
+
+        <section id="features" class="features-grid">
+            <div class="feature-item">
+                <h3>🚀 Fast Performance</h3>
+                <p>Lightning-fast load times and seamless user experience.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🔒 Secure & Safe</h3>
+                <p>Enterprise-grade security to protect your data.</p>
+            </div>
+            <div class="feature-item">
+                <h3>💡 Innovative Solutions</h3>
+                <p>Cutting-edge technology that keeps you ahead.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🌍 Global Reach</h3>
+                <p>Available worldwide with multilingual support.</p>
+            </div>
+        </section>
+
         <section id="about">
             <h2>ℹ️ About Us</h2>
-            <p>Learn about our mission, values, and the passion that drives us forward every day.</p>
-            <a class="btn" href="about.html">Learn more about us</a>
+            <p>We believe in creating exceptional experiences that make a difference. Our team of dedicated professionals works tirelessly to deliver quality and innovation.</p>
+            <p>Learn more about our mission, values, and the passion that drives us forward every day.</p>
         </section>
+
+        <section id="stats" class="stats-row">
+            <div class="stat-box">
+                <h3>📊 10,000+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-box">
+                <h3>🌟 50+</h3>
+                <p>Countries Served</p>
+            </div>
+            <div class="stat-box">
+                <h3>⚡ 99.9%</h3>
+                <p>Uptime Guarantee</p>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonial-section">
+            <h2>💬 What Our Clients Say</h2>
+            <blockquote>
+                <p>"This service has completely transformed how we do business. Highly recommended!"</p>
+                <footer>— Sarah Johnson, CEO</footer>
+            </blockquote>
+        </section>
+
         <section id="contact">
             <h2>📧 Get In Touch</h2>
             <p>Have questions or want to collaborate? We'd love to hear from you. Reach out and let's start a conversation.</p>
-            <a class="btn" href="contact.html">Contact Us</a>
+            <button class="btn">Contact Us</button>
         </section>
     </main>
     <footer>

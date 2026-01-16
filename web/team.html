@@ -5,32 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team - My Web Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="theme-toggle.js"></script>
 </head>
-<body>
-    <header class="center">
-        <h1>Team</h1>
+<body class="light-theme">
+    <header>
+        <div class="header-content center">
+            <h1>Team</h1>
+        </div>
+        <button id="theme-toggle" title="Toggle theme">
+            <span id="theme-icon">🌙</span>
+        </button>
     </header>
     <nav>
            <ul>
             <li><a class="btn-nav" href="index.html">Home</a></li>
             <li><a class="btn-nav" href="about.html">About</a></li>
             <li><a class="btn-nav" href="products.html">Products</a></li>
-            <li><a class="btn-nav" href="team.html">Team</a></li>
+            <li><a class="btn-nav active" href="team.html">Team</a></li>
             <li><a class="btn-nav" href="contact.html">Contact</a></li>
         </ul>
     </nav>
   <main>
-    <section id="team">
+    <section id="hero" class="hero-full">
         <h2>👨‍💼 Meet Our Team</h2>
         <p>Our team is made up of passionate professionals who are experts in their fields. Together, we combine creativity, technical expertise, and dedication to deliver outstanding results.</p>
-        <p>Each member brings unique skills and perspectives that drive our success.</p>
     </section>
+
+    <section id="team-members" class="team-grid">
+        <div class="team-member">
+            <h3>👩‍💼 Sarah Johnson</h3>
+            <p class="role">Chief Executive Officer</p>
+            <p>Leading our vision with 15+ years of industry experience. Passionate about innovation and team growth.</p>
+        </div>
+        <div class="team-member">
+            <h3>👨‍💻 Michael Chen</h3>
+            <p class="role">Chief Technology Officer</p>
+            <p>Architecting cutting-edge solutions. Expert in cloud infrastructure and scalable systems.</p>
+        </div>
+        <div class="team-member">
+            <h3>👩‍🎨 Emily Rodriguez</h3>
+            <p class="role">Creative Director</p>
+            <p>Crafting beautiful user experiences. Award-winning designer with an eye for detail.</p>
+        </div>
+        <div class="team-member">
+            <h3>👨‍🔬 David Kumar</h3>
+            <p class="role">Head of Research</p>
+            <p>Driving innovation through research. PhD in Computer Science with 20+ patents.</p>
+        </div>
+        <div class="team-member">
+            <h3>👩‍💼 Lisa Anderson</h3>
+            <p class="role">VP of Marketing</p>
+            <p>Building brands that resonate. Strategic thinker with a passion for storytelling.</p>
+        </div>
+        <div class="team-member">
+            <h3>👨‍🏫 James Wilson</h3>
+            <p class="role">Customer Success Lead</p>
+            <p>Ensuring customer satisfaction. Dedicated to delivering exceptional support experiences.</p>
+        </div>
+    </section>
+
+    <section id="culture" class="full-width">
+        <h2>🌈 Our Culture</h2>
+        <p>We believe in fostering a collaborative, inclusive environment where everyone can thrive. Our team culture is built on trust, respect, and continuous learning.</p>
+        <p>We celebrate diversity, encourage innovation, and support work-life balance for all team members.</p>
+    </section>
+
+    <section id="perks" class="features-grid">
+        <div class="feature-item">
+            <h3>🏖️ Flexible Work</h3>
+            <p>Remote-first with flexible hours</p>
+        </div>
+        <div class="feature-item">
+            <h3>🏥 Health Benefits</h3>
+            <p>Comprehensive health coverage</p>
+        </div>
+        <div class="feature-item">
+            <h3>📚 Learning Budget</h3>
+            <p>Annual education allowance</p>
+        </div>
+        <div class="feature-item">
+            <h3>🎉 Team Events</h3>
+            <p>Regular team building activities</p>
+        </div>
+    </section>
+
     <section id="careers">
         <h2>🚀 Join Our Team</h2>
         <p>Looking for an exciting career opportunity? We're always seeking talented individuals who share our vision and values.</p>
         <p>Explore current openings and become part of something special.</p>
         <button class="btn">View Open Positions</button>
     </section>
+
     <section id="contact-team">
         <h2>💬 Connect With Us</h2>
         <p>Have a question for our team? Need specialized support? We're here to help!</p>

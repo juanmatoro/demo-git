@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - My Web Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="theme-toggle.js"></script>
 </head>
-<body>
-    <header class="center">
-        <h1>About</h1>
+<body class="light-theme">
+    <header>
+        <div class="header-content center">
+            <h1>About</h1>
+        </div>
+        <button id="theme-toggle" title="Toggle theme">
+            <span id="theme-icon">🌙</span>
+        </button>
     </header>
     <nav>
            <ul>
             <li><a class="btn-nav" href="index.html">Home</a></li>
-            <li><a class="btn-nav" href="about.html">About</a></li>
+            <li><a class="btn-nav active" href="about.html">About</a></li>
             <li><a class="btn-nav" href="products.html">Products</a></li>
             <li><a class="btn-nav" href="team.html">Team</a></li>
             <li><a class="btn-nav" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 <main>
-    <section id="about">
+    <section id="about" class="hero-full">
         <h2>🎯 Our Mission</h2>
         <p>We are committed to delivering innovative solutions that make a difference. Our mission is to empower our customers with cutting-edge technology and exceptional service.</p>
         <p>We believe in transparency, quality, and building lasting relationships with our community.</p>
