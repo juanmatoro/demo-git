@@ -32,3 +32,109 @@
     nav ul li a:hover {
         text-decoration: underline;
     }
+
+    /* Botones específicos para navegación */
+    nav .btn-nav {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #6b7280;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    nav .btn-nav:hover {
+        background-color: #4b5563;
+        text-decoration: none;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Main con flexbox horizontal */
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Secciones */
+    section {
+        flex: 1;
+        min-width: 250px;
+        padding: 20px;
+        background-color: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 5px;
+    }
+
+    /* Estilos para botones */
+    button, .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #869ac2;
+        color: #ffffff;
+    }
+
+    /* Estado hover */
+    button:hover, .btn:hover {
+        background-color: #314055;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estado inactivo/disabled */
+    button:disabled, .btn:disabled {
+        background-color: #d1d5db;
+        color: #9ca3af;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
+
+    button:disabled:hover, .btn:disabled:hover {
+        background-color: #d1d5db;
+        transform: none;
+        box-shadow: none;
+    }
+
+    /* Estilos para formularios */
+    .form-group {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 4px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #6b7280;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
